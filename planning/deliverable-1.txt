@@ -1,0 +1,22 @@
+Algorithm: 
+1- TacArray = [[0,0,0],[0,0,0],[0,0,0]]
+2- Die roll to check who goes first
+3- Click event, get x,y attributes of clickboxes
+4- Update TacArray using x,y attributes
+5- Wait 2.5 turns (5 click events)
+6- Check if row complete
+7- Update score if row complete, clear board
+8- Keep updating board with click events if row not complete
+9- Declare tie if all boxes filled without row complete (or after 9 click events)
+
+
+Plan: 
+1- Make basic HTML structure for game
+2- Basic css to make testing easier on webpage
+3- Implement basic game functionality (inputs, wins, score)
+4- Shashka - More CSS, prettify
+5- Implement added functionality using JS
+6- Optional: Save score in a file to retreive later?
+
+
+
