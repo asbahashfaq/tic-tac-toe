@@ -4,13 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://fonts.cdnfonts.com/css/callie-chalk-font" rel="stylesheet"> 
+
+    
     <link rel="stylesheet" href="style.css">
     <title>Tic Tac Toe</title>
 </head>
 <body>
     <main>
-        <div class="board"></div>  
-        <p class="yourTurn"></p>
+        <section class="welcomeScreen">
+            <div class="playerInput">
+                <input type="text" class="p1"><img class="bot1" src="images/computer.png" alt="bot">
+                <span class="vs">vs</span>
+                <input type="text" class="p2"><img class="bot2" src="images/computer.png" alt="bot">
+            </div>
+            <div class="gameInput">
+                <div class="options">
+                    <span>Difficulty: </span>
+                    <select name="difficulty" id="diff" >
+                        <option value="0" disabled selected>click to select</option>
+                        <option value="3">easy 3x3</option>
+                        <option value="4">medium 4x4</option>
+                        <option value="5">hard 5x5</option>
+                        <option value="8">crazy 8x8</option>
+                        <option value="-1">enter manually</option>
+                    </select> 
+                </div>  
+                <div class="manual hide">
+                    <span>Choose your fate: </span>
+                    <input type="number" placeholder="Grid size">
+                </div>
+                <button id="start">Tic Tac Toe</button>
+            </div>
+
+
+        </section>
+        <section class="gameScreen hide">
+            <div class="panel">
+                <p class="player player1"><span class="name"></span><span class="score"></span></p>
+                <p class="player player2"><span class="name"></span><span class="score"></span></p>
+            </div>
+           
+            <div class="borderClip">
+                <div class="board"></div>  
+            </div>
+            <p class="result"></p>
+        </section>
+ 
+        <!-- <object type="image/svg+xml" data="images/newX.svg" class="logo"> </object>  --> 
+
+          
+        <audio id="chalkXSound" src="audio/chalk_x.m4a" preload="auto">
+        <audio id="chalkOSound" src="audio/chalk_o.m4a" preload="auto">
+        
     </main>
 </body>
 <script src="script.js"></script>

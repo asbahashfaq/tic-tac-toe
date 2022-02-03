@@ -1,0 +1,35 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"> 
+<svg width="60mm" height="60mm" version="1.1" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <clipPath id="clipPath17102">
+   <text transform="matrix(.85083 .86294 -.42213 .74718 0 0)" x="9.849391" y="21.554047" fill="#000000" font-family="Chalkduster" font-size="66.529px" stroke-width="1.6632" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="9.849391" y="21.554047" font-family="Chalkduster" font-size="66.529px" stroke-width="1.6632" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">O</tspan></text>
+  </clipPath>
+
+
+    <style type="text/css"><![CDATA[ 
+        svg{ 
+            transition: all 1s ease;
+            transition-delay: 1s;
+
+
+            position: relative; 
+            height:100px;
+            width: 100px;
+        }
+        svg .text{
+            stroke-dasharray: 2900;
+            stroke-dashoffset: 2900;
+            animation: animate 10s linear 1 forwards;
+        } 
+        @keyframes animate{
+            to{
+                stroke-dashoffset: 0;
+            }
+        }
+
+    ]]>
+    </style>
+ </defs>
+ <path class="text" d="m41.219 6.6278c-2.6492-0.146-12.036 2.7162-19.224 5.0139l-7.179 8.1748s-3.6953 8.585-1.3861 17.118c2.3218 8.579 5.4819 10.965 5.4819 10.965s6.1357 7.0756 12.393 4.481c6.2575-2.5946 11.063-5.6778 13.505-16.514 2.4419-10.836 0.36613-12.706 0.36613-12.706l-4.878-10.322" clip-path="url(#clipPath17102)" fill="none" stroke="#fff" stroke-width="13.365"/>
+</svg>

@@ -1,17 +1,171 @@
+body{
+    background-color: antiquewhite;
+    background: url(images/bg.jpeg);
+    color: #fff;
+    font-family: 'Callie Chalk Font', sans-serif;
+}
+.hide{
+    display: none;
+}
+*{
+    box-sizing: border-box; 
+}
+/* *{ 
+    cursor: url('images/pointer.cur'), auto;	
+} */
+/* WELCOME SCREEN */
+.playerInput{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input, select, button{
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 255px 5px 565px 65px/65px 215px 135px 264px;
+    padding: 10px 30px;
+    color: white;
+    font-family: 'Callie Chalk Font', sans-serif;
+    font-size: 25px;
+    border: solid 5px hsl(0deg 0% 100%);
+    height: auto;
+    width: auto;
+    margin-top: 30px;
+    overflow: visible!important;
+    box-sizing: content-box;
+}
+button{
+    cursor: pointer; 
+    background-color: #ffffff14;
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+button:hover{
+    color: #2e2e2e;
+    background-color: #ffffffb8;
+    border-color: #2e2e2e;
+}
+select{ 
+}
+.playerInput .vs {
+    padding: 20px;
+    font-size: 9vw;
+    line-height: normal;
+}
+.gameInput{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gameInput span {
+    font-size: 22px;
+    padding-right: 30px;
+}
+.manual input {
+    width: 190px;
+}
+
+.playerInput img {
+    margin-left: -57px;
+    margin-right: 34px;
+    margin-top: 19px;
+    width: 35px;
+    cursor: pointer;
+}
+/* GAME SCREEN */
+.borderClip{
+    overflow: hidden;
+    width: fit-content; 
+    margin: 0px auto; 
+}
 .board{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 2px;
+    /* gap: 2px; */
     width: fit-content;
+    margin:-2px;
 }
 .board span {
-    display: block;
-    width: 50px;
-    height: 50px;
-    background-color: #f2f2f2;
-    font-size: 2em;
-    text-align: center;
-    line-height: 46px; 
+    display: flex;
+    width: 90px;
+    height: 90px;
+    /* background-color: #535353;  */
+    border: 2px solid white;
 }
 
+ svg *{
+     position: relative;
+     height:100%;
+     width: 100%;
+ }
  
+ /* 
+.annimation{ 
+    transition: all 1s ease;
+    transition-delay: 1s;
+
+}
+.annimation svg{
+    position: relative; 
+    height:100px;
+    width: 100px;
+}
+.annimation svg .text{
+    stroke-dasharray: 2900;
+    stroke-dashoffset: 2900;
+    animation: animate 10s linear 1 forwards;
+} */
+
+.board svg{ 
+    transition: all 1s ease;
+    transition-delay: 1s;
+
+
+    position: relative; 
+    height:100px;
+    width: 100px;
+}
+ .alive svg .text{
+    stroke-dasharray: 2900;
+    stroke-dashoffset: 2900;
+    animation: animate 15s linear 1 forwards;
+} 
+@keyframes animate{
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+ 
+  
+
+/* Panel */
+
+.panel {
+    display: flex;
+    justify-content: space-between;
+    height: 20vh;
+}
+.player {
+    padding: 20px 80px;
+    font-size: 30px;
+    transition: Font 0.2s;
+    line-height: 35px;
+}
+.score {
+    padding: 20px;
+}
+.turn{ 
+    stroke-opacity: 1;
+    -webkit-text-stroke-width: 7px;
+    -webkit-text-stroke-color: #ffffff73;
+    font-size:35px;
+    transition: Font 0.2s;
+}
+.result{
+    display: block;
+    text-align: center;
+    font-size: 2em;
+}
+
+.player .name {
+    padding: 20px;
+}
