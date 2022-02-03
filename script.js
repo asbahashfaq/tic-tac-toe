@@ -220,8 +220,7 @@ function clearBoard(){
 }
 
 
-var empties;
-var goodEmpties;
+var empties; 
 var split;
 
  
@@ -314,7 +313,7 @@ function computerSays(){
     empties = new Array();  
     for (x = 0; x < gridSize; x++){ 
         for (y=0; y < gridSize; y++){ 
-            if( tacArray[y][x] == null ){ 
+            if( tacArray[x][y] == null){ 
                 if(empties.indexOf(x +" "+ y) < 0) empties.push(x +" "+ y) 
             }
              
@@ -338,7 +337,7 @@ var rowR=[],colR=[],dia1R=[],dia2R=[];
 
 
                 if(x == y) {rank[x][y] += dia1R[x]}
-                if (x+y == gridSize){rank[x][y]+=dia2R[x] ;console.log("d2:"+dia2R)}
+                if (x+y == gridSize){rank[x][y]+=dia2R[x] ;/*console.log("d2:"+dia2R)*/}
 
                 if(rank[x][y] > highest){   //decision
                     highestLocation = [x,y]
@@ -354,10 +353,11 @@ var rowR=[],colR=[],dia1R=[],dia2R=[];
     if (highest > 0){
         turn();
     } 
-    else if ((highest == 0 && empties.length > 0 ) || turns == 1){
+    else if ((empties.length > 0 ) || turns == 1){
         split = empties[Math.floor(Math.random()*empties.length)].split(' ');
         computerX = split[0]
         computerY = split[1] 
+        console.log(empties)
         turn();
     }
     else console.log("Board is full")
