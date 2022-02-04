@@ -351,18 +351,21 @@ var rowR=[],colR=[],dia1R=[],dia2R=[];
     } 
     computerX = highestLocation[0] 
     computerY = highestLocation[1] 
-    
-    if (highest > 0){
-        turn();
-    } 
-    else if ((empties.length > 0 ) || turns == 1){
+    if (turns == 0){
         split = empties[Math.floor(Math.random()*empties.length)].split(' ');
         computerX = split[0]
-        computerY = split[1] 
-        console.log(empties)
+        computerY = split[1]  
         turn();
-    }
-    else console.log("Board is full")
+        console.log("turn = " + turns,computerX, computerY, highest);
+    }else if (highest > 0){
+        turn();
+    } 
+    else if ((empties.length > 0 )){
+        split = empties[Math.floor(Math.random()*empties.length)].split(' ');
+        computerX = split[0]
+        computerY = split[1]  
+        turn();
+    } else console.log("Board is full")
 
 }
 
