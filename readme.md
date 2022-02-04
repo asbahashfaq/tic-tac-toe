@@ -15,7 +15,9 @@ If the user just wants to sit back and enjoy watching the game, both inputs can 
 ![Game Board Initial View](screenshots/8.png) 
 The game starts off with the browser setting up the grid using the settings user provided. 
 Player can click on boxes to mark their choice.
-Computer plays automatically
+Computer plays automatically.
+When a turn is started, the x or o is annimated on screen using svg and clippath.
+Audio is added to the strokes as well
 
 #Computer AI
 ![Win or Tie](screenshots/6.png) 
@@ -30,8 +32,14 @@ The game decides when a player (or computer) wins by checking all four possiblit
 - Primary diagonal is all the same
 - Secondary diagonal is all the same
 
+
+#Problems
+- Computer AI is currently not doing diagonal checks very well. 
+
 #More To Do
+- Fix problems
 - Add responsiveness
 - Commentify JS
 - Allow changing difficulty level after going to game screen
 - Implement hints for player
+
