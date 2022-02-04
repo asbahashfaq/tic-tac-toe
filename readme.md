@@ -1,4 +1,5 @@
 # Project 1 - Tic Tac Toe
+[a link](https://asbahashfaq.github.io/tic-tac-toe/)
 Design and build your version of the classic game Tic Tac Toe
 Theme: Throwback to old school days, when lunch time meant the chalkboard was up for grabs
 
@@ -42,4 +43,5 @@ The game decides when a player (or computer) wins by checking all four possiblit
 - Commentify JS
 - Allow changing difficulty level after going to game screen
 - Implement hints for player
+- Use better data structures to get rid of extra code 
 
