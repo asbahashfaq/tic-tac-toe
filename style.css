@@ -181,3 +181,7 @@ select{
 .player .name {
     padding: 20px;
 }
+
+.board:hover{
+    cursor: pointer;
+}
