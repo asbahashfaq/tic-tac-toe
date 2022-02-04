@@ -12,6 +12,8 @@ var result = document.querySelector(".result");
 var playerDisplay = [document.querySelector(".player1"), document.querySelector(".player2")];
 //playerDisplay.textContent = players[whoseTurn];
 var chalkSound = [document.querySelector("#chalkOSound"), document.querySelector("#chalkXSound")] 
+chalkSound[0].volume = 0.3;
+chalkSound[1].volume = 0.3;
 
 var gridSize = 4;
 
