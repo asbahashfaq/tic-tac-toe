@@ -1,5 +1,5 @@
 # Project 1 - Tic Tac Toe
-[a link](https://asbahashfaq.github.io/tic-tac-toe/)
+[Play the Game](https://asbahashfaq.github.io/tic-tac-toe/)
 Design and build your version of the classic game Tic Tac Toe
 Theme: Throwback to old school days, when lunch time meant the chalkboard was up for grabs
 
