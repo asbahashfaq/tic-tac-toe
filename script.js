@@ -349,6 +349,7 @@ var rowR=[],colR=[],dia1R=[],dia2R=[];
         } 
         
     } 
+    if ( highest ==0 ) console.log ("Tie Predicted");
     computerX = highestLocation[0] 
     computerY = highestLocation[1] 
     if (turns == 0){
@@ -367,6 +368,7 @@ var rowR=[],colR=[],dia1R=[],dia2R=[];
         turn();
     } else console.log("Board is full")
 
+    
 }
 
 document.querySelector(".bot1").addEventListener('click',function(e){
